@@ -147,7 +147,7 @@
 #define CONFIG_CMD_GSC
 #define CONFIG_CMD_EECONFIG      /* Gateworks EEPROM config cmd */
 #define CONFIG_CMD_UNZIP         /* gzwrite */
-#define CONFIG_RBTREE
+#define CONFIG_RBTREE  1
 
 /* Ethernet support */
 #define CONFIG_FEC_MXC
@@ -214,7 +214,7 @@
 /*
  * MTD Command for mtdparts
  */
-#define CONFIG_LZO
+#define CONFIG_LZO  1
 #define CONFIG_CMD_MTDPARTS
 #define CONFIG_MTD_DEVICE
 #define CONFIG_MTD_PARTITIONS
@@ -271,7 +271,7 @@
 	"initrd_high=0xffffffff\0" \
 	"fixfdt=" \
 		"fdt addr ${fdt_addr}\0" \
-	"bootdir=boot\0" \
+	"bootdir=@/boot\0" \
 	"loadfdt=" \
 		"if ${fsload} ${fdt_addr} ${bootdir}/${fdt_file}; then " \
 			"echo Loaded DTB from ${bootdir}/${fdt_file}; " \
