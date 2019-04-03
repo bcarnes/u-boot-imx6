@@ -49,6 +49,7 @@
 /spl/
 /tpl/
 /defconfig
+/install
 
 #
 # Generated include files
