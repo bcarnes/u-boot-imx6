@@ -284,7 +284,6 @@
 			"run fixfdt; " \
 		"fi\0" \
 	\
-	"fs=ext4\0" \
 	"script=6x_bootscript-ventana\0" \
 	"loadscript=" \
 		"if ${fsload} ${loadaddr} ${bootdir}/${script}; then " \
